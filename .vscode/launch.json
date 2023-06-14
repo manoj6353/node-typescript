@@ -1,0 +1,61 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Dev typescript-express-starter",
+      "command": "npm run dev"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Dev:consumers:Standard typescript-express-starter",
+      "command": "npx cross-env PORT=8001 RUN_CONSUMER='true' QUEUE_NAME='rythm.standard' npm run dev"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Dev:consumers:Notification typescript-express-starter",
+      "command": "npx cross-env PORT=8002 RUN_CONSUMER='true' QUEUE_NAME='smackDab.notificationProcess' npm run dev"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npx cross-env PORT=8002 RUN_CONSUMER='true' QUEUE_NAME='rythm.delayed' npm run dev",
+      "name": "npm run consume:delayed"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npx cross-env RUN_CONSUMER='true' QUEUE_NAME='smackDab.notificationProcess' PORT=8003 npm run dev",
+      "name": "npm run notificationProcess"
+    },
+    // npx cross-env RUN_CONSUMER='true' QUEUE_NAME='smackDab.notificationProcess' PORT=8001 npm run dev
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Start typescript-express-starter",
+      "command": "npm run start"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Test typescript-express-starter",
+      "command": "npm run test"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Lint typescript-express-starter",
+      "command": "npm run lint"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Lint:Fix typescript-express-starter",
+      "command": "npm run lint:fix"
+    }
+  ]
+}

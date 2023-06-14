@@ -1,0 +1,14 @@
+{
+  "diffEditor.wordWrap": "off",
+  "editor.guides.bracketPairs": true,
+  "dotenv.enableAutocloaking": false,
+  "cSpell.words": [
+    "ILIKE",
+    "Includeable",
+    "mailparser",
+    "mentionmessage",
+    "rabbitmq",
+    "uids",
+    "xorganization"
+  ]
+}
